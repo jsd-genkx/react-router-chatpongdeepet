@@ -1,15 +1,26 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
-const Products = () => {
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+    description: string;
+    category: string;
+}
+
+interface ProductsProps {
+    products: Product[];
+}
+
+const Products = ({ products }: ProductsProps) => {
     return (
-        <div>
+        <div className={"text-center border"}>
             <ul>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
-                <li>product</li>
+                {products.map((product) => (
+                    <li key={product.id}>
+                        <Link to={`/products/${product.id}`}>{product.name}</Link>
+                    </li>
+                ))}
             </ul>
         </div>
     );

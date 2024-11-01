@@ -9,6 +9,7 @@ const Nav = () => {
                     <li className={"border px-2 rounded-lg bg-blue-600 text-white"}><Link to='/about'>About</Link></li>
                     <li className={"border px-2 rounded-lg bg-blue-600 text-white"}><Link to='/contact'>Contact</Link></li>
                     <li className={"border px-2 rounded-lg bg-blue-600 text-white"}><Link to='/homepage'>Home Page</Link></li>
+                    <li className={"border px-2 rounded-lg bg-blue-600 text-white"}><Link to='/products'>Products</Link></li>
                 </ul>
             </nav>
         </div>
