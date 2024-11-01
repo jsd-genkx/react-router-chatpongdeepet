@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom'
 // Components
 import App from './App'
-import Home from './components/Home'
+import Home from './pages/Home.tsx'
 import Error404 from './components/Error404'
 const AppRoutes = () => (
     <App>
